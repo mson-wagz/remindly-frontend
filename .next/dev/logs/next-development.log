@@ -1,3 +1,406 @@
-[00:00:02.882] Server  LOG      ✓ Ready in 2.2s
-[00:00:10.726] Server  LOG      ○ Compiling / ...
-[00:00:13.359] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.281] Server  LOG      ✓ Ready in 2.4s
+[00:00:11.236] Server  LOG      ○ Compiling / ...
+[00:00:14.626] Server  ERROR    ⨯ ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+
+
+
+./frontend/src/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@radix-ui/react-slot'
+  1 | import * as React from "react"
+> 2 | import { Slot } from "@radix-ui/react-slot"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva, type VariantProps } from "class-variance-authority"
+  4 |
+  5 | import { cn } from "../../lib/utils"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/components/ui/button.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/components/ui/button.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./frontend/tailwind.config.js:75:13
+Module not found: Can't resolve 'tailwindcss-animate'
+  73 |     },
+  74 |   },
+> 75 |   plugins: [require("tailwindcss-animate")],
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  76 | }
+  77 |
+  78 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:17.390] Browser ERROR   uncaughtError: Error: ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+
+
+[00:00:18.858] Browser ERROR   ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+[00:00:18.858] Browser ERROR   ./frontend/src/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@radix-ui/react-slot'
+  1 | import * as React from "react"
+> 2 | import { Slot } from "@radix-ui/react-slot"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva, type VariantProps } from "class-variance-authority"
+  4 |
+  5 | import { cn } from "../../lib/utils"
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/components/ui/button.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/components/ui/button.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:18.858] Browser ERROR   ./frontend/tailwind.config.js:75:13
+Module not found: Can't resolve 'tailwindcss-animate'
+  73 |     },
+  74 |   },
+> 75 |   plugins: [require("tailwindcss-animate")],
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  76 | }
+  77 |
+  78 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:18.858] Browser ERROR   ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+[00:00:18.858] Browser ERROR   ./frontend/src/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@radix-ui/react-slot'
+  1 | import * as React from "react"
+> 2 | import { Slot } from "@radix-ui/react-slot"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva, type VariantProps } from "class-variance-authority"
+  4 |
+  5 | import { cn } from "../../lib/utils"
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/components/ui/button.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/components/ui/button.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:18.858] Browser ERROR   ./frontend/tailwind.config.js:75:13
+Module not found: Can't resolve 'tailwindcss-animate'
+  73 |     },
+  74 |   },
+> 75 |   plugins: [require("tailwindcss-animate")],
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  76 | }
+  77 |
+  78 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:12.162] Server  LOG        Reload env: .env.local
+[00:01:12.268] Server  ERROR    ⨯ ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+
+
+
+./frontend/src/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@radix-ui/react-slot'
+  1 | import * as React from "react"
+> 2 | import { Slot } from "@radix-ui/react-slot"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva, type VariantProps } from "class-variance-authority"
+  4 |
+  5 | import { cn } from "../../lib/utils"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/components/ui/button.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/components/ui/button.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./frontend/tailwind.config.js:75:13
+Module not found: Can't resolve 'tailwindcss-animate'
+  73 |     },
+  74 |   },
+> 75 |   plugins: [require("tailwindcss-animate")],
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  76 | }
+  77 |
+  78 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:12.524] Browser ERROR   uncaughtError: Error: ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+
+
+[00:01:13.863] Browser ERROR   ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+[00:01:13.863] Browser ERROR   ./frontend/src/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@radix-ui/react-slot'
+  1 | import * as React from "react"
+> 2 | import { Slot } from "@radix-ui/react-slot"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva, type VariantProps } from "class-variance-authority"
+  4 |
+  5 | import { cn } from "../../lib/utils"
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/components/ui/button.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/components/ui/button.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:13.863] Browser ERROR   ./frontend/tailwind.config.js:75:13
+Module not found: Can't resolve 'tailwindcss-animate'
+  73 |     },
+  74 |   },
+> 75 |   plugins: [require("tailwindcss-animate")],
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  76 | }
+  77 |
+  78 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:13.863] Browser ERROR   ./frontend/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+    [at Function.resolve (node:internal/modules/helpers:145:19)]
+    [at _resolve (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:246378)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249092)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\tailwind.config.js:75:13]
+    [at evalModule (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:251913)]
+    [at jiti (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\jiti\dist\jiti.js:1:249841)]
+    [at C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:56:30]
+    [at loadConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\load-config.js:58:6)]
+    [at getTailwindConfig (C:\Users\lenovo\Documents\SideWork\Remindly\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:71:116)]
+
+Import trace:
+  Client Component Browser:
+    ./frontend/src/app/globals.css [Client Component Browser]
+    ./frontend/src/app/layout.tsx [Server Component]
+[00:01:13.863] Browser ERROR   ./frontend/src/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@radix-ui/react-slot'
+  1 | import * as React from "react"
+> 2 | import { Slot } from "@radix-ui/react-slot"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva, type VariantProps } from "class-variance-authority"
+  4 |
+  5 | import { cn } from "../../lib/utils"
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/components/ui/button.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component Browser]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/components/ui/button.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Client Component SSR]
+    ./frontend/src/components/reminders/RemindersList.tsx [Server Component]
+    ./frontend/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:13.863] Browser ERROR   ./frontend/tailwind.config.js:75:13
+Module not found: Can't resolve 'tailwindcss-animate'
+  73 |     },
+  74 |   },
+> 75 |   plugins: [require("tailwindcss-animate")],
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  76 | }
+  77 |
+  78 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:20.185] Server  LOG      ✓ Compiled in 8.8s
+[00:02:23.066] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:08.384] Server  LOG      ○ Compiling /whatsapp ...
+[00:06:15.233] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:28.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:21.230] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:13.722] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:28.082] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:23.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:24.511] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:55.609] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
